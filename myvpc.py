@@ -1,8 +1,8 @@
 import boto3
 
-accesskey = sys.argv[1]
-secretkey = sys.argv[2]
-region = sys.argv[3]
+ACCESS_KEY = sys.argv[1]
+SECRET_KEY = sys.argv[2]
+REGION_NAME = sys.argv[3]
 
 client = boto3.client(
     'ec2',
