@@ -11,7 +11,7 @@ client = boto3.client(
     'ec2',
     aws_access_key_id=ACCESS_KEY,
     aws_secret_access_key=SECRET_KEY,
-    region=REGION_NAME
+    aws_region=REGION_NAME
 )
 
 response = client.create_vpc(
