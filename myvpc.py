@@ -1,5 +1,9 @@
 import boto3
 
+accesskey = sys.argv[1]
+secretkey = sys.argv[2]
+region = sys.argv[3]
+
 client = boto3.client(
     'ec2',
     aws_access_key_id=ACCESS_KEY,
